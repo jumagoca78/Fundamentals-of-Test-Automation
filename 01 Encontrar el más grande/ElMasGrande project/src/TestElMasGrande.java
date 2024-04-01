@@ -21,4 +21,10 @@ public class TestElMasGrande{
         assertEquals(5, ElMasGrande.largest(array));
     }
     
+    @Test
+    public void testLargestWithNegativeNumbers() {
+        int[] array = {-1, -2, -5, -4, -3};
+        assertEquals(-1, ElMasGrande.largest(array));
+    }
+    
 }
