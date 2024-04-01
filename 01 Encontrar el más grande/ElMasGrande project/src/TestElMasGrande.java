@@ -1,4 +1,6 @@
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
 import org.junit.Test;
 
 public class TestElMasGrande{
@@ -26,5 +28,23 @@ public class TestElMasGrande{
         int[] array = {-1, -2, -5, -4, -3};
         assertEquals(-1, ElMasGrande.largest(array));
     }
+
+    @Test
+    public void testLargestWithNegativeAndPositiveNumbers() {
+        int[] array = {-1, 2, -5, 4, -3};
+        assertEquals(4, ElMasGrande.largest(array));
+    }
+
+    @Test   
+    public void testLargestWithEmptyArray() {
+        int[] array = {};
+        try {
+            ElMasGrande.largest(array);
+        } catch (IllegalArgumentException e) {
+            return;
+        }
+        fail("IllegalArgumentException expected");
+    }        
+
     
 }
