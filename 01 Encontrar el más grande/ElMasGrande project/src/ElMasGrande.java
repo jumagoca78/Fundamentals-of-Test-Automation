@@ -2,6 +2,11 @@ public class ElMasGrande {
     //writte a method to return the largest on an array
     public static int largest(int[] array){
       int largest = Integer.MIN_VALUE;
+
+      //check null array
+      if(array == null){
+        throw new IllegalArgumentException("Null array");
+      }
       //check empty array thorw an exception
       if(array.length == 0){
         throw new IllegalArgumentException("Empty array");
