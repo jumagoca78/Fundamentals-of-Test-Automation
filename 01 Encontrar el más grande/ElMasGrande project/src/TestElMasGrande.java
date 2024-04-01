@@ -115,8 +115,7 @@ public class TestElMasGrande{
     }
 
     /*Prueba de manejo de errores para entradas no válidas: Además de números negativos, sería prudente probar cómo maneja tu función otros tipos de entradas no válidas, 
-    como valores null, undefined, cadenas de texto, o incluso objetos y arrays anidados. Aunque estas pruebas van más allá del alcance de números negativos, son esenciales 
-    para asegurarse de que tu función sea robusta y segura.*/
+    como valores null.*/
     @Test
     public void testLargestWithNull() {
         int[] array = null;
@@ -127,4 +126,5 @@ public class TestElMasGrande{
         }
         fail("IllegalArgumentException expected");
     }
+    
 }
