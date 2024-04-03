@@ -135,10 +135,5 @@ public class TestElMasGrande{
     }
  
     
-    //probar negativos muy grandes
-    @Test
-    public void testLargestWithLargeNegativeNumbers() {
-        int[] array = {-1000000000, -2000000000, -5000000000, -4000000000, -3000000000};
-        assertEquals(-1000000000, ElMasGrande.largest(array));
-    }
+ 
 }

@@ -3,6 +3,10 @@ public class ElMasGrande {
     public static int largest(int[] array){
       int largest = Integer.MIN_VALUE;
       
+      
+
+
+
       //check null array
       if(array == null){
         throw new IllegalArgumentException("Null array");
@@ -12,6 +16,7 @@ public class ElMasGrande {
         throw new IllegalArgumentException("Empty array");
       }
       for(int i = 0; i <= array.length-1; i++){
+        
         if(array[i] > largest){
           largest = array[i];
         }
