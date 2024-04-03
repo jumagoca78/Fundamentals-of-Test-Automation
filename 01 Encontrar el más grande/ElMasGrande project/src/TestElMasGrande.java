@@ -126,5 +126,19 @@ public class TestElMasGrande{
         }
         fail("IllegalArgumentException expected");
     }
+
+    //prueba de enteros positivos y negativos
+    @Test
+    public void testLargestWithPositiveAndNegativeNumbers() {
+        int[] array = {1, 2, -5, 4, 3};
+        assertEquals(4, ElMasGrande.largest(array));
+    }
+ 
     
+    //probar negativos muy grandes
+    @Test
+    public void testLargestWithLargeNegativeNumbers() {
+        int[] array = {-1000000000, -2000000000, -5000000000, -4000000000, -3000000000};
+        assertEquals(-1000000000, ElMasGrande.largest(array));
+    }
 }
