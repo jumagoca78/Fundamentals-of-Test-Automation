@@ -29,7 +29,29 @@ El propósito de este módulo es permitir a los administradores y empleados de l
 - Se aceptan de uno a cinco valores de tamaño para cada bebida.
 - La entrada sigue el formato especificado, incluyendo el uso correcto de las comas.
 
-Este módulo no se preocupa por la interfaz de usuario (UI), enfocándose exclusivamente en asegurar que la lógica de backend procese y valide la entrada de datos de manera correcta.
+
+## Estructura de Carpetas
+
+El espacio de trabajo está organizado en varias carpetas principales:
+
+- `src`: Esta es la carpeta principal donde se mantienen los archivos fuente del programa. Dentro de `src`, encontrarás dos versiones distintas del programa:
+  - **Versión con Mensajes de Texto (BebidaConMensajes.java)**: Esta versión del programa utiliza mensajes de texto para informar al usuario sobre cualquier error o situación inesperada. Ideal para contextos donde se prefiere evitar el lanzamiento de excepciones.
+  - **Versión con Excepciones (Bebida.java)**: Esta versión hace uso de excepciones para manejar situaciones de error. Proporciona un mecanismo más estructurado para el control de errores, permitiendo que los errores se capturen y se manejen de manera más efectiva en niveles superiores del programa.
+
+- `lib`: Carpeta para mantener las dependencias necesarias para el proyecto. Aquí se almacenan las librerías externas que el programa necesita para funcionar correctamente.
+
+Los archivos de salida compilados se generan por defecto en la carpeta `bin`.
+
+## Archivos de Pruebas
+
+Además de las versiones del programa, se incluyen archivos de prueba diseñados para validar el comportamiento de cada versión. Estos archivos de prueba llevan el prefijo `Test` y se encuentran también en la carpeta `src`. Se proporcionan dos conjuntos de archivos de prueba, uno para cada versión del programa:
+
+- **Archivo Test para la Versión con Mensajes de Texto**
+- **Archivo Test para la Versión con Excepciones**
+
+Las pruebas están diseñadas para ser fácilmente automatizables, lo que permite validar de forma eficiente y sistemática la lógica del programa y el manejo de errores. El desafío reside en tener una comprensión clara de lo que se desea automatizar y asegurar que las pruebas cubran adecuadamente los casos de uso y situaciones de error pertinentes.
+
+> **Nota**: Es esencial tener claridad en los objetivos de las pruebas para maximizar su efectividad y asegurar que el programa funcione como se espera en diversos escenarios.
 
 ## Uso del Programa
 
